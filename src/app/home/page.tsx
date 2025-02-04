@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "@/features/common/Layout";
-import Image from "next/image";
 import "@/styles/__pages.css";
 
 const Home = () => {
