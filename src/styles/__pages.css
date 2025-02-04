@@ -1,0 +1,40 @@
+.home-container {
+    position: relative;
+    min-height: calc(100vh - 90px);
+
+    .user-name {
+        font-size: 5rem;
+        color: white;
+        font-weight: 600;
+        padding-top: 40px;
+    }
+
+    .home-image {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        min-height: 100%;
+        opacity: 0.2;
+        background-size: cover;
+        background-position: center;
+        background-image: url('/images/home-pic.jpg');
+        background-repeat: no-repeat;
+    }
+
+    .user-detials {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        bottom: 100px;
+
+        div {
+            width: 400px;
+            font-size: 18px;
+        }
+
+        .home-desc {
+            text-align: right;
+        }
+    }
+}

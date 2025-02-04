@@ -1,0 +1,17 @@
+.main-header {
+    justify-content: space-between;
+    padding: 25px 100px;
+}
+
+.header-nav-bar {
+    div {
+        color: #e7d8c0;
+        font-size: 18px;
+        font-family: var(--font-arimo);
+        cursor: pointer;
+    }
+
+    div + * {
+        margin-left: 24px;
+    }
+}
