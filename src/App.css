@@ -1,0 +1,83 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Remove default padding */
+#root {
+  padding: 0;
+}
+
+/* Remove max-width constraint */
+#root {
+  max-width: none;
+}
+
+/* Custom animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96E6A1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 8s ease infinite;
+  background-size: 300% 300%;
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.rotating {
+  animation: rotate 20s linear infinite;
+}
+
+.skill-card {
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) rotate(5deg);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+  z-index: -1;
+  transform: scale(1.05);
+  filter: blur(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover::before {
+  opacity: 0.7;
+}
+
+.hero-pattern {
+  background-image: radial-gradient(circle at 1px 1px, hsl(var(--primary)/0.15) 1px, transparent 0);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(to bottom, black, transparent);
+}
