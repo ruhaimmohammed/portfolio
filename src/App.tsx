@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const expertiseSection = document.getElementById('about-section');
+      const expertiseSection = document.getElementById("about-section");
       if (expertiseSection) {
         const scrollPosition = window.scrollY;
         const sectionPosition = expertiseSection.offsetTop;
@@ -30,8 +30,8 @@ function App() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -49,7 +49,9 @@ function App() {
               alt="Profile"
               className="w-10 h-10 rounded-full object-cover"
             />
-            <span className="font-bold md:text-2xl text-gray-800 gradient-text">Ruhaim Mohammed</span>
+            <span className="font-bold md:text-2xl text-gray-800 gradient-text">
+              Ruhaim Mohammed
+            </span>
           </div>
           <div className="flex items-center gap-4">
             <a
@@ -210,29 +212,34 @@ function App() {
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex gap-3 group">
                   <span className="flex-shrink-0 text-primary">•</span>
-                  <p className="group-hover:text-foreground transition-colors">
-                    Led the switch to ViteJS (bye-bye long builds), built
-                    scalable frontend architecture, and created boilerplates
-                    that actually saved time—25% more efficient, less
-                    hair-pulling.
+                  <p className="group-hover:text-foreground transition-colors text-left">
+                    Championed the switch to ViteJS, slashing build times by 40%
+                    and making devs question why we ever waited so long in the
+                    first place. Built reusable boilerplates and scalable
+                    architecture so future-me (and the team) didn’t have to
+                    reinvent the wheel every sprint. Efficiency went up, blood
+                    pressure went down.
                   </p>
                 </li>
                 <li className="flex gap-3 group">
                   <span className="flex-shrink-0 text-primary">•</span>
-                  <p className="group-hover:text-foreground transition-colors">
-                    Did the usual code wizardry: 20+ pages, reusable components,
-                    80%+ test coverage with Jest, and fewer bugs thanks to code
-                    reviews, ESLint, and SonarQube nagging us into best
-                    practices.
+                  <p className="group-hover:text-foreground transition-colors text-left">
+                    Whipped up 20+ dynamic pages and a library of reusable UI
+                    bits using React, Next.js, TypeScript, and GraphQL—basically
+                    the frontend Avengers. Introduced Jest for unit tests, kept
+                    coverage over 80%, and used ESLint/SonarQube to gently bully
+                    everyone into writing better code.
                   </p>
                 </li>
                 <li className="flex gap-3 group">
                   <span className="flex-shrink-0 text-primary">•</span>
-                  <p className="group-hover:text-foreground transition-colors">
-                    Helped modernize the company's biggest product, integrated a
-                    buffet of payment options (Apple Pay, PayPal, Tabby—you name
-                    it), and made sure it all ran smoothly on AWS like a
-                    well-oiled machine.
+                  <p className="group-hover:text-foreground transition-colors text-left">
+                    Led the great codebase glow-up for our biggest
+                    product—turned legacy spaghetti into something you’d
+                    actually want to deploy. Rolled out multi-payment options
+                    (Apple Pay, PayPal, Tabby, etc.) and got everything running
+                    smoothly on AWS CloudFront, like a high-performance,
+                    money-taking machine.
                   </p>
                 </li>
               </ul>
