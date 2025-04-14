@@ -249,7 +249,7 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20">
+      <section className="py-20 flex justify-center">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-12 gradient-text">
             Featured Projects
@@ -257,29 +257,29 @@ function App() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
+                title: "MyRewards by YouGotaGift",
+                description: "Gift Card solutions for corporate loyalty programs",
+                image:
+                  "https://yougotagift.com/business/wp-content/uploads/2024/10/Frame-1321315769-2-2048x1170.png",
+              },
+              {
+                title: "YOURewards by YouGotaGift",
+                description:
+                  "A bulk gift card solutions for corporate clients",
+                image:
+                  "https://yougotagift.com/business/wp-content/uploads/2024/10/1-YouReward-1746x2048.png",
+              },
+              {
                 title: "E-commerce Platform",
                 description:
-                  "A full-stack e-commerce solution built with React and Node.js",
+                  "A gift cards e-commerce solution built with React and Next.js",
                 image:
-                  "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
-              },
-              {
-                title: "Task Management App",
-                description:
-                  "A collaborative task management tool with real-time updates",
-                image:
-                  "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80",
-              },
-              {
-                title: "Social Media Dashboard",
-                description: "Analytics dashboard for social media management",
-                image:
-                  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+                  "https://yougotagift.com/business/wp-content/uploads/2024/10/Group-264-1.png",
               },
             ].map((project) => (
               <div
                 key={project.title}
-                className="project-card group relative overflow-hidden rounded-xl"
+                className="project-card group relative overflow-hidden rounded-xl border border-solid border-gray-300"
               >
                 <img
                   src={project.image}
